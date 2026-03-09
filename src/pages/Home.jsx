@@ -2,46 +2,50 @@ import React from "react";
 import { useEffect, useState } from "react";
 // components!
 import Header from "../components/Header";
-// data!
-import { countries } from "../data/countries";
 // css!
 import "../index.css";
+import css from "./Home.module.css";
+// react-router-dom!
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [meals, setMeals] = useState([]);
-  const apiData = async () => {
+  // Fetch by country!
+  const fetchData = async (area) => {
     const res = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/filter.php?a=${countries[5]}`,
+      `https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`,
     );
+    const data = await res.json();
+    const recipe = data.meals;
+    setMeals(recipe);
+  };
 
+  const searchRecipe = async (query) => {
+    const res = await fetch(
+      `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`,
+    );
     const data = await res.json();
     setMeals(data.meals);
   };
 
   useEffect(() => {
-    apiData();
+    fetchData("Indian");
   }, []);
 
   return (
     <>
-      <Header />
+      <Header searchRecipe={searchRecipe} />
 
-      <div className="container">
-        <div className="btnContainer">
-          {countries.map((data, idx) => (
-            <button key={idx}>{data}</button>
-          ))}
-        </div>
+      <Link to={"/countries"}>on Click</Link>
 
-        <div className="contendContainer">
-          {meals.map((meal, idx) => (
-            <div key={idx} className="card">
-              <img src={meal.strMealThumb} width="200" />
-
-              <h4>{meal.strMeal}</h4>
+      <div className={css.mealsContainer}>
+        {meals &&
+          meals.map((meal) => (
+            <div key={meal.idMeal} className={css.card}>
+              <img className={css.img} src={meal.strMealThumb} />
+              <h4 className={css.mealName}>{meal.strMeal}</h4>
             </div>
           ))}
-        </div>
       </div>
     </>
   );

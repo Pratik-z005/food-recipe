@@ -1,0 +1,25 @@
+body {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.btnContainer {
+  margin: 0px 50px;
+}
+.countryBtn {
+  padding: 8px 16px;
+  margin: 10px;
+  background-color: rgba(202, 202, 202, 0.384);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.countryBtn:hover {
+  background-color: #4e2feaec;
+  color: #fff;
+}
+.countryBtn:active {
+  background-color: #4e2feaec;
+  color: #fff;
+}
