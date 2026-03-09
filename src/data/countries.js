@@ -1,0 +1,17 @@
+export const countries = [
+  "Indian",
+  "Italian",
+  "Mexican",
+  "Japanese",
+  "Chinese",
+  "Thai",
+  "French",
+  "Turkish",
+  "Spanish",
+  "Greek",
+  "Korean",
+  "Vietnamese",
+  "Lebanese",
+  "Indonesian",
+  "American",
+];
