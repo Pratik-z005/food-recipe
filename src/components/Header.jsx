@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 // css!
 import "../index.css";
-import css from "./header.module.css";
+import css from "./Header.module.css";
 
 // lucide-react!
 import { Menu, Moon, Sun, Search } from "lucide-react";
