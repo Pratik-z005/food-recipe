@@ -33,3 +33,24 @@
   border-radius: 10px;
   background-color: rgb(169, 98, 235);
 }
+
+@media screen and (max-width: 900px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .recipes {
+    width: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .mealHeading {
+    display: none;
+  }
+  #mainheading {
+    display: block;
+  }
+  .infoContainer {
+    padding: 0px;
+  }
+}

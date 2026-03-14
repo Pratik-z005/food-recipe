@@ -43,7 +43,7 @@ const RandomMeal = () => {
         </div>
 
         <button className="randomBtn" onClick={fetchRandomMeal}>
-          Get Another Random Meal
+          Random Meal
         </button>
       </div>
     </>

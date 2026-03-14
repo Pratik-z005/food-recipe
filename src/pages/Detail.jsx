@@ -51,7 +51,7 @@ const Detail = () => {
             <button className={css.favBtns} onClick={addToFav}>
               Add to Favourites
             </button>
-            <p>{meal.strInstructions}</p>
+            <p className={css.recipes}>{meal.strInstructions}</p>
           </div>
         </div>
       </div>
