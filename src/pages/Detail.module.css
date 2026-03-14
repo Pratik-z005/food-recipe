@@ -1,0 +1,35 @@
+.flex {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoContainer {
+  padding: 30px;
+  padding-top: 0px;
+}
+
+#mainheading {
+  text-decoration: underline;
+}
+
+.mealHeading {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.img {
+  width: 350px;
+  height: 350px;
+  padding: 0px 0px;
+}
+
+.favBtns {
+  padding: 7px 12px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(169, 98, 235);
+}

@@ -16,9 +16,6 @@
   border: 2px solid #fff;
   box-shadow: 3px 3px 6px #000;
 }
-.img:hover {
-  transform: scale(1.05);
-}
 
 .mealName {
   margin-top: 5px;

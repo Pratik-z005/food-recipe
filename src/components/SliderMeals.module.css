@@ -1,0 +1,166 @@
+.btnContainer {
+  margin: 0px 50px;
+}
+
+.countryBtn {
+  padding: 8px 16px;
+  margin: 10px;
+  background-color: rgba(202, 202, 202, 0.384);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.countryBtn:hover {
+  background-color: #4e2feaec;
+  color: #fff;
+}
+.countryBtn:active {
+  background-color: #4e2feaec;
+  color: #fff;
+}
+
+.mealsContainer {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: slideRight 60s linear infinite;
+}
+.mealsContainer:hover,
+.mealsContainer:active {
+  animation-play-state: paused;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  scroll-snap-align: start;
+}
+.card:hover {
+  box-shadow: 2px 2px 6px #000;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  object-fit: cover;
+}
+
+.mealName {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  width: 250px;
+  color: #000;
+  text-decoration: none;
+}
+
+.txtDecoration {
+  text-decoration: none;
+}
+
+#countryFilterBtn {
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(232, 232, 232, 0.413);
+  border-radius: 5px;
+  font-size: 0.75rem;
+  margin: 15px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  overflow-x: auto; /* allow manual scroll */
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+/* hide scrollbar */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* infinite horizontal animation */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    height: 100vmax;
+  }
+  .slider {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    padding: 5px 0;
+    margin: 5px 0px;
+    overflow-x: auto; /* allow swipe */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* smooth mobile scrolling */
+  }
+  /* hide scrollbar */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  .mealsContainer {
+    padding: 7px;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    animation: slideRight 80s linear infinite;
+  }
+  .mealsContainer:active {
+    animation-play-state: paused;
+  }
+  .card {
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+  }
+  .card:hover {
+    box-shadow: 2px 2px 6px #000;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    object-fit: cover;
+  }
+  .mealName {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    width: 200px;
+    color: #000;
+    text-decoration: none;
+  }
+  .title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

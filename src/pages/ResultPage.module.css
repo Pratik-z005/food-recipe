@@ -1,0 +1,67 @@
+.mealsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 90%;
+  margin: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.card:hover {
+  box-shadow: 2px 2px 6px #000000af;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  object-fit: cover;
+}
+
+.mealName {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  width: 250px;
+  color: #000;
+  text-decoration: none;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .mealsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+  .card {
+    width: 190px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .img {
+    height: 200px;
+  }
+  .mealName {
+    width: 190px;
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 8px;
+  }
+}

@@ -4,8 +4,70 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+  button {
+    color: white;
+  }
+}
+
 .container {
   text-align: center;
-  max-width: 1280px;
   margin: 0px auto;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.randomBtn {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(160, 79, 235, 0.824);
+  color: #fff;
+  margin: 10px;
+}
+.randomBtn:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+.randomBtn:active {
+  background-color: rgba(160, 79, 235, 0.824);
+  color: #fff;
+  border: none;
+}
+
+#viewMore {
+  font-size: 0.8rem;
+}
+
+.categoryContainer {
+  max-height: 300px; /* visible height */
+  overflow-y: auto; /* vertical scroll */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 6px;
+}
+
+/* optional scrollbar styling */
+.categoryContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.categoryContainer::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
 }
