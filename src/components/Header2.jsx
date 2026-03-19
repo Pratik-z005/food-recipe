@@ -14,10 +14,7 @@ import Sidebar from "./Sidebar";
 // react-router!
 import { Link } from "react-router-dom";
 
-// data!
-import avatar from "../assets/chef-avatar.jpg";
-
-const Header = ({ searchRecipe, setShowCountries }) => {
+const Header2 = ({ searchRecipe, setShowCountries }) => {
   const [input, setInput] = useState("");
   // on Enter!
   const handleKeyDown = (e) => {
@@ -26,6 +23,7 @@ const Header = ({ searchRecipe, setShowCountries }) => {
       setInput("");
     }
   };
+
   const [isOpen, setIsOpen] = useState(false);
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -71,14 +69,8 @@ const Header = ({ searchRecipe, setShowCountries }) => {
           />
         </div>
       </div>
-      <Link to={"/chatbot"} className={css.avatarcontainer}>
-        <div className={css.avatar}>
-          <p className={css.avatarTxt}>Chat with Chef...</p>
-        </div>
-        <img className={css.avatarImg} src={avatar} alt="" />
-      </Link>
     </>
   );
 };
 
-export default Header;
+export default Header2;

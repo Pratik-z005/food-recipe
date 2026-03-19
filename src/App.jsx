@@ -12,6 +12,7 @@ import Category from "./pages/Category";
 import RandomMeal from "./pages/RandomMeal";
 import FavouritePage from "./pages/FavouritePage";
 import SettingPage from "./pages/SettingPage";
+import ChatBot from "./pages/Chatbot";
 
 // react-router-dom!
 import { Routes, Route } from "react-router-dom";
@@ -28,6 +29,8 @@ const App = () => {
         <Route path="/random" element={<RandomMeal />} />
         <Route path="/favs" element={<FavouritePage />} />
         <Route path="/setting" element={<SettingPage />} />
+
+        <Route path="/chatbot" element={<ChatBot />} />
       </Routes>
     </>
   );

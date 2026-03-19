@@ -36,6 +36,8 @@ const Home = () => {
           <SliderMeals area="Chinese" />
           <hr />
           <SliderMeals area="Japanese" />
+          <hr />
+          <SliderMeals area="Italian" />
         </>
       )}
     </>
