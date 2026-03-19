@@ -12,7 +12,7 @@ import Category from "./pages/Category";
 import RandomMeal from "./pages/RandomMeal";
 import FavouritePage from "./pages/FavouritePage";
 import SettingPage from "./pages/SettingPage";
-import ChatBot from "./pages/Chatbot";
+import ChatBot from "./pages/ChatBot";
 
 // react-router-dom!
 import { Routes, Route } from "react-router-dom";
