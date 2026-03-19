@@ -88,7 +88,7 @@ const styles = {
   },
   userMessage: {
     alignSelf: "flex-end",
-    background: "#4caf50",
+    background: "#1a1f1a",
     padding: "10px 15px",
     borderRadius: "15px",
     margin: "10px 0",
