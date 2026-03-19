@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 
 // css!
-import css from "./ResultPage.module.css";
+import "../index.css";
 
 const FavouritePage = () => {
   const [favMeals, setFavMeals] = useState([]);
@@ -21,16 +21,20 @@ const FavouritePage = () => {
       <div>
         <h2>My Favorite Meals </h2>
 
-        <div className={css.mealsContainer}>
+        <div className="mealsContainer">
           {favMeals.map((meal) => (
-            <Link key={meal.idMeal} to={`/detail/${meal.idMeal}`}>
-              <div className={css.card}>
+            <Link
+              key={meal.idMeal}
+              to={`/detail/${meal.idMeal}`}
+              className="links"
+            >
+              <div className="card">
                 <img
-                  className={css.img}
+                  className="img"
                   src={meal.strMealThumb}
                   alt={meal.strMeal}
                 />
-                <h4>{meal.strMeal}</h4>
+                <h4 className="mealName">{meal.strMeal}</h4>
               </div>
             </Link>
           ))}

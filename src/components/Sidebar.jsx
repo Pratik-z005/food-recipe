@@ -30,7 +30,9 @@ const Sidebar = ({ isOpen }) => {
           <ul className="categoryContainer">
             {categories.map((cat) => (
               <li key={cat}>
-                <Link to={`/category/${cat}`}>{cat}</Link>
+                <Link to={`/category/${cat}`} className="links">
+                  {cat}
+                </Link>
               </li>
             ))}
           </ul>

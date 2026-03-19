@@ -1,12 +1,3 @@
-.white {
-  height: 100vh;
-  background-color: #fff;
-}
-.black {
-  height: 100vh;
-  background-color: #000;
-}
-
 .container {
   width: 100%;
   max-width: 1080px;
@@ -24,10 +15,11 @@
   font-size: 2.1rem;
   font-family: Arial, sans-serif;
   text-decoration: underline;
+  color: inherit;
 }
 
 .links {
-  color: #000;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -35,7 +27,7 @@
   border: none;
   font-size: 1rem;
   background-color: transparent;
-  color: #000;
+  color: inherit;
 }
 #input:focus {
   outline: none;
@@ -62,7 +54,7 @@
 #mode {
   padding: 10px;
   background-color: transparent;
-  color: #000;
+  color: inherit;
   border: none;
   font-size: 1.3rem;
   position: absolute;
@@ -75,7 +67,7 @@
 #menu {
   padding: 10px;
   background-color: transparent;
-  color: #000000;
+  color: inherit;
   border: none;
   font-size: 1.3rem;
   position: absolute;

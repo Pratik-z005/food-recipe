@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 // css!
-import css from "./ResultPage.module.css";
+import "../index.css";
 
 // components!
 import Header from "../components/Header";
@@ -10,6 +10,7 @@ import Header from "../components/Header";
 // pages!
 import Allcountry from "./Allcountry";
 
+// react-router!
 import { Link } from "react-router-dom";
 
 const ResultPage = () => {
@@ -39,18 +40,18 @@ const ResultPage = () => {
       ) : (
         <>
           <div>
-            <h2 className={css.title}>{area} Recipes</h2>
+            <h2 className="title">{area} Recipes</h2>
 
-            <div className={css.mealsContainer}>
+            <div className="mealsContainer">
               {meals &&
                 meals.map((meal) => (
                   <Link
                     to={`/detail/${meal.idMeal}`}
                     key={meal.idMeal}
-                    className={css.card}
+                    className="card"
                   >
-                    <img src={meal.strMealThumb} className={css.img} />
-                    <h4 className={css.mealName}>{meal.strMeal}</h4>
+                    <img src={meal.strMealThumb} className="img" />
+                    <h4 className="mealName">{meal.strMeal}</h4>
                   </Link>
                 ))}
             </div>

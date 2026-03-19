@@ -13,11 +13,11 @@
 }
 .countryBtn:hover {
   background-color: #4e2feaec;
-  color: #fff;
+  color: inherit;
 }
 .countryBtn:active {
   background-color: #4e2feaec;
-  color: #fff;
+  color: inherit;
 }
 
 .mealsContainer {
@@ -56,7 +56,7 @@
   margin-top: 5px;
   font-size: 1.2rem;
   width: 250px;
-  color: #000;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@
   padding: 5px;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: inherit;
   background-color: rgba(232, 232, 232, 0.413);
   border-radius: 5px;
   font-size: 0.75rem;
@@ -156,7 +156,7 @@
     margin-top: 5px;
     font-size: 0.9rem;
     width: 200px;
-    color: #000;
+    color: inherit;
     text-decoration: none;
   }
   .title {

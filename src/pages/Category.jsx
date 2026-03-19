@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
 // css!
-import css from "./ResultPage.module.css";
+import "../index.css";
 
 // components!
 import Header from "../components/Header";
@@ -29,18 +29,18 @@ const Category = () => {
     <>
       <Header />
 
-      <h2 className={css.heading}>{name} Meals</h2>
+      <h2 className="heading">{name} Meals</h2>
 
-      <div className={css.mealsContainer}>
+      <div className="mealsContainer">
         {meals.map((meal) => (
-          <Link key={meal.idMeal} to={`/detail/${meal.idMeal}`}>
-            <div className={css.card}>
-              <img
-                className={css.img}
-                src={meal.strMealThumb}
-                alt={meal.strMeal}
-              />
-              <h4 className={css.mealName}>{meal.strMeal}</h4>
+          <Link
+            key={meal.idMeal}
+            to={`/detail/${meal.idMeal}`}
+            className="links"
+          >
+            <div className="card">
+              <img className="img" src={meal.strMealThumb} alt={meal.strMeal} />
+              <h4 className="mealName">{meal.strMeal}</h4>
             </div>
           </Link>
         ))}

@@ -10,7 +10,6 @@ import Allcountry from "./Allcountry";
 
 // css!
 import "../index.css";
-import css from "./Home.module.css";
 
 const Home = () => {
   const [showCountries, setShowCountries] = useState(false);

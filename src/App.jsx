@@ -1,6 +1,8 @@
 import React from "react";
-// components!
-import Header from "./components/Header";
+
+// css!
+import "./index.css";
+
 // pages!
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
@@ -10,6 +12,7 @@ import Category from "./pages/Category";
 import RandomMeal from "./pages/RandomMeal";
 import FavouritePage from "./pages/FavouritePage";
 import SettingPage from "./pages/SettingPage";
+
 // react-router-dom!
 import { Routes, Route } from "react-router-dom";
 
@@ -18,7 +21,6 @@ const App = () => {
     <>
       <Routes>
         <Route index element={<Home />} />
-        {/* <Route path="/detail" element={<Detail />} /> */}
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/country/:area" element={<ResultPage />} />
         <Route path="/mealbycountry" element={<CountryBtnPage />} />

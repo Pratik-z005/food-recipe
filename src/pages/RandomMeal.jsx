@@ -8,7 +8,6 @@ import Header from "../components/Header";
 
 // css!
 import "../index.css";
-import css from "./ResultPage.module.css";
 
 const RandomMeal = () => {
   const [meal, setMeal] = useState(null);
@@ -34,7 +33,9 @@ const RandomMeal = () => {
         <h2 className={css.heading}>Random Meal </h2>
 
         <div>
-          <img src={meal.strMealThumb} width="300" />
+          <Link to={`/detail/${meal.idMeal}`} id="viewMore">
+            <img src={meal.strMealThumb} width="300" />
+          </Link>
           <h3>{meal.strMeal}</h3>
 
           <Link to={`/detail/${meal.idMeal}`} id="viewMore">
