@@ -63,7 +63,7 @@ const ChatBot = () => {
           <input
             className={css.input}
             type="text"
-            placeholder="Talk to Totoro..."
+            placeholder="Ask anything..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
