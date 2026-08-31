@@ -31,9 +31,9 @@ const Home = () => {
       ) : (
         <>
           <hr />
-          <SliderMeals area="American" />
-          <hr />
           <SliderMeals area="Chinese" />
+          <hr />
+          <SliderMeals area="Thai" />
           <hr />
           <SliderMeals area="Japanese" />
           <hr />
