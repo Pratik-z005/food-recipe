@@ -31,7 +31,7 @@ const Home = () => {
       ) : (
         <>
           <hr />
-          <SliderMeals area="Indian" />
+          <SliderMeals area="American" />
           <hr />
           <SliderMeals area="Chinese" />
           <hr />
